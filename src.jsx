@@ -957,9 +957,6 @@ function App() {
       )}
       <aside className={`sidebar ${mobileOpen ? "mobile-open" : ""}`}>
         <a className="brand" href="#/overview">
-          <span className="brand-symbol">
-            h<span>✦</span>
-          </span>
           <span>
             hermes<small>ACADEMY</small>
           </span>
@@ -972,9 +969,6 @@ function App() {
           <X size={21} />
         </button>
         <div className="course-identity">
-          <span className="identity-icon">
-            <GraduationCap size={22} />
-          </span>
           <div>
             Hermes Agent crash course
             <small>From install to useful automation</small>
@@ -1015,17 +1009,6 @@ function App() {
           <p>
             {progress.completed.length} of {lessons.length} lessons completed
           </p>
-        </div>
-        <div className="sidebar-note">
-          <Sparkles size={20} />
-          <h4>An agent that grows with you.</h4>
-          <p>Learn the memory and skills loop that makes Hermes yours.</p>
-          <button
-            onClick={() => navigate(`lesson/${modules[3].lessons[0].id}`)}
-          >
-            Explore the learning loop
-            <ArrowRight size={15} />
-          </button>
         </div>
         <a
           className="official-link"
@@ -1080,28 +1063,9 @@ function App() {
                 eyebrow="THE HERMES AGENT CRASH COURSE"
                 title="Install Hermes. Make it yours."
                 description="A practical guide to the open-source agent that learns your preferences and builds skills from experience."
-              >
-                <span className="learner-tag">
-                  <span />
-                  HANDS-ON · SELF-PACED
-                </span>
-              </PageHeading>
+              />
               <section className="hero">
                 <div className="hero-copy">
-                  <div className="hero-pill">
-                    <Sparkles size={13} />
-                    FROM FIRST INSTALL TO EVERYDAY SIDEKICK
-                  </div>
-                  <h2>
-                    Your agent.
-                    <br />
-                    Your context. Your workflows.
-                  </h2>
-                  <p>
-                    Set up the real Hermes Agent, choose your model, teach it
-                    what matters, and turn successful tasks into reusable
-                    skills.
-                  </p>
                   <button
                     className="primary"
                     onClick={() => navigate(`lesson/${nextLesson.id}`)}
@@ -1122,63 +1086,7 @@ function App() {
                     </span>
                   </div>
                 </div>
-                <div className="hero-terminal">
-                  <div className="terminal-bar">
-                    <span />
-                    <span />
-                    <span />
-                    <small>YOUR TERMINAL, YOUR AGENT</small>
-                  </div>
-                  <div className="terminal-body">
-                    <div>
-                      <span className="terminal-prompt">$</span> hermes
-                    </div>
-                    <div className="terminal-greeting">
-                      Hermes Agent
-                      <Sparkles size={13} />
-                    </div>
-                    <p>
-                      <span>You →</span> Remember that I prefer concise
-                      <br />
-                      summaries with a clear next action.
-                    </p>
-                    <div className="terminal-chip">
-                      <Brain size={14} />
-                      Context that carries forward
-                    </div>
-                    <div className="terminal-chip">
-                      <BookMarked size={14} />
-                      Skills you can reuse
-                    </div>
-                  </div>
-                  <span className="terminal-caption">
-                    LEARN IT HERE. RUN IT ON YOUR MACHINE.
-                  </span>
-                </div>
               </section>
-              <div className="stats">
-                <div>
-                  <Terminal size={22} />
-                  <div>
-                    <strong>Get a working installation</strong>
-                    <small>macOS, Linux / WSL2, or Windows</small>
-                  </div>
-                </div>
-                <div>
-                  <Brain size={22} />
-                  <div>
-                    <strong>Understand how it grows</strong>
-                    <small>Memory, context, and procedural skills</small>
-                  </div>
-                </div>
-                <div>
-                  <Workflow size={22} />
-                  <div>
-                    <strong>Build a useful workflow</strong>
-                    <small>Tools, messaging, and scheduled tasks</small>
-                  </div>
-                </div>
-              </div>
               <div className="section-heading">
                 <div>
                   <h2>
@@ -1209,9 +1117,6 @@ function App() {
                 ))}
               </div>
               <section className="bottom-banner">
-                <span className="banner-icon">
-                  <ClipboardList size={24} />
-                </span>
                 <div>
                   <h3>Turn a vague idea into a clear task.</h3>
                   <p>
